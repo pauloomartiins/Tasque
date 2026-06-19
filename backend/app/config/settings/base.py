@@ -55,6 +55,8 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = "accounts.User"
+
 LANGUAGE_CODE = "pt-pt"
 
 TIME_ZONE = "Europe/Lisbon"
