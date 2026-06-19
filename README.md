@@ -1,4 +1,4 @@
-# TaskFlow
+# Tasque
 
 Projeto full stack de gestão de tarefas para equipas pequenas.
 
