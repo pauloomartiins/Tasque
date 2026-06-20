@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "apps.projects",
     "apps.tasks",
     "django_filters",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -80,4 +81,11 @@ REST_FRAMEWORK = {
     "DEFAULT_FILTER_BACKENDS": (
         "django_filters.rest_framework.DjangoFilterBackend",
     ),
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Tasque API",
+    "DESCRIPTION": "Task management API built with Django REST Framework.",
+    "VERSION": "1.0.0",
 }
