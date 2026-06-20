@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Project
+
+
+@admin.register(Project)
+class ProjectAdmin(admin.ModelAdmin):
+    list_display = ("id", "name", "workspace", "created_at")
+    search_fields = ("name", "workspace__name")
+    list_filter = ("workspace",)
